@@ -33,7 +33,8 @@ body *{
 }
 
 #container{
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     height: 712px;
     margin: 0 auto;
     padding: 0 24px;
