@@ -42,6 +42,20 @@ body *{
     margin-top: 56px;
 }
 
+#localeSwitcher button{
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    left: 0;
+    animation: slideBack 0.4s;
+    color: #000;
+}
 
 #profile{
     display: flex;
@@ -56,14 +70,22 @@ body *{
     border-radius: 50%;
 }
 
-
-#profile p{
+.name{
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
 }
 
-#switch{
+.introduction{
+    font-size: 12px;
+}
+
+#buttons{
+    display: flex;
+}
+
+#switch,
+#localeSwitcher{
     position: relative;
     width: 64px;
     margin: 0 auto;
@@ -84,15 +106,18 @@ body *{
     animation: slideBack 0.4s;
 }
 
-.light #switch button{
+.light #switch button,
+.translate #localeSwitcher button{
     animation: slideIn 0.4s forwards;
 }
 
-#switch button:hover{
+#switch button:hover,
+#localeSwitcher button:hover{
     outline: 8px solid var(--highlight-color)
 }
 
-#switch span{
+#switch span,
+#localeSwitcher span{
     display: block;
     width: 64px;
     height: 24px;

@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <title>Home Page</title>
 </head>
@@ -13,26 +14,33 @@
     <div id="container">
         <div id="profile">
             <img src="./assets/avatar.jpeg" alt="" width="112px" height="112px">
-            <p>Camila da Rosa</p>
+            <p class="name">Camila da Rosa</p>
+            <p class="introduction">Welcome to my page</p>
         </div>
-        <div id="switch" onclick="toggleMode()">
-            <button>
-            </button>
-            <span>
-            </span>
+        <div id="buttons">
+            <div id="switch" onclick="toggleMode()">
+                <button></button>
+                <span>
+                </span>
+            </div>
+            <div id="localeSwitcher" onclick="localeSwitcher()">
+                <button>EN</button>
+                <span>
+                </span>
+            </div>
         </div>
-        <ul>
+        <ul class="list">
             <li>
-                <a href="#" target="_blank">Conheça mais sobre mim</a>
+                <a href="./about/about-me.html" target="_blank">About Me</a>
             </li>
             <li>
-                <a href="#" target="_blank">Meus projetos</a>
+                <a href="./projects/myProjects.html" target="_blank">My Projects</a>
             </li>
             <li>
-                <a href="#" target="_blank">Minhas experiências</a>
+                <a href="./experiences/myExperiences.html" target="_blank">My Experiences</a>
             </li>
             <li>
-                <a href="#" target="_blank">Meus contatos</a>
+                <a href="./contacts/myContacts.html" onclick="contacts()" target="_blank">My Contacts</a>
             </li>
         </ul>
         <div id="social-links">
@@ -42,7 +50,7 @@
             <a href="https://www.linkedin.com/in/caamiladarosa/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
         </div>
         <footer>
-            <p>Feito com ❤ por Camila da Rosa</p>
+            <p>Developed by Camila da Rosa</p>
         </footer>
     </div>
 

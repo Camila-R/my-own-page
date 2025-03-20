@@ -5,6 +5,11 @@
 https://camila-r.github.io/my-own-page/
 
 
+### Functions
+- Translating PT/EN
+- Changing screen mode
+
+
 ### Technology
 - HTML
 - CSS
